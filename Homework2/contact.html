@@ -1,0 +1,77 @@
+<!--
+Filename: contact.html
+Description: Contact page | IT-340 Homework #2
+Copyright (c) 2026 Ryan Smith <smithrm23@juniata.edu>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Contact Us </title>
+	</head>
+
+	<body>
+		<header>
+			<h1> Pennsylvania Native Plant Initiative </h1>
+
+			<nav>
+				<b> <a href="index.html"> Home </a> </b>
+				<b> <a href="plants.html"> Plants </a> </b>
+				<b> <a href="contact.html"> Contact Us </a> </b>
+			</nav>
+		</header>
+
+		<main>
+			<h2> Contact Us </h2>
+			<form action="index.html">
+				<table>
+					<tr>
+						<td> Name </td>
+						<td>
+							<input type="text" id="name" name="name" placeholder="Name" required/>
+						</td>
+					</tr>
+
+					<tr>
+						<td> Email Address </td>
+						<td>
+							<input type="email" id="email" name="email" placeholder="name@example.com" required/>
+						</td>
+					</tr>
+
+					<tr>
+						<td> Subject </td>
+						<td>
+							<input type="text" id="subject" name="subject" placeholder="Your subject line" required/>
+						</td>
+					</tr>
+
+					<tr>
+						<td> Message </td>
+						<td>
+							<textarea id="message" name="message" placeholder="Leave us a message" required></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td> Contact Method </td>
+						<td>
+							<select id="contact-method" name="contact-method" required>
+								<option> Email </option>
+								<option> Phone call </option>
+								<option> Text message </option>
+							</select>
+						</td>
+					</tr>
+				</table>
+
+				<div>
+					<button type="reset"> Reset </button>
+					<button type="submit"> Submit </button>
+				</div>
+			</form>
+		</main>
+	</body>
+</html>
