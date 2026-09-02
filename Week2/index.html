@@ -1,0 +1,121 @@
+<!--
+Filename: index.html
+Description: A simple multi-page website with a header and navigation menu.
+Copyright (c) 2026 Ryan Smith <smithrm23@juniata.edu>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Week 2 Practice </title>
+	</head>
+
+	<body>
+		<!-- Header section -->
+		<header>
+			<h1> Week 2 Practice </h1>
+			<p> This is a simple practice page for Week 2. </p>
+		</header>
+
+		<!-- Navigation -->
+		<nav>
+			<ul>
+				<li> <a href="index.html"> Index </a> </li>
+				<li> <a href="home.html"> Home </a> </li>
+				<li> <a href="about.html"> About </a> </li>
+			</ul>
+		</nav>
+
+		<!-- Main page content -->
+		<main>
+			<!-- Break our content into sections -->
+			
+			<section class="plants">
+				<h2> Section 1 </h2>
+				<p> Outdoor Plants </p>
+				<img id="plant1" src="images/leaf.png" alt="Leaf" width="50" height="50"/>
+			</section>
+
+			<section>
+				<h2> Section 2 </h2>
+				<p> Indoor Plants </p>
+				<img id="plant2" src="images/plant.png" alt="Plant" width="50" height="50"/>
+			</section>
+
+			<section>
+				<h2> Section 3 </h2>
+				<p> Indoor/Outdoor Plants </p>
+				<img id="plant3" src="images/potted-plant.png" alt="Potted Plant" width="50" height="50"/>
+			</section>
+
+			<!-- A standalone article -->
+			<article>
+				<h2> First Web Project </h2>
+				<p> I created my first website using HTML and I am ready to learn more! </p>
+			</article>
+
+			<!-- Form -->
+			<form action="about.html">
+				<table>
+					<tr>
+						<td> First Name </td>
+						<td>
+							<input type="text" id="fname" name="fname" placeholder="First Name"/>
+						</td>
+					</tr>
+
+					<tr>
+						<td> Last Name </td>
+						<td>
+							<input type="text" id="lname" name="lname" placeholder="Last Name"/>
+						</td>
+					</tr>
+
+					<tr>
+						<td> Email Address </td>
+						<td>
+							<input type="email" id="email" name="email" placeholder="name@example.com"/>
+						</td>
+					</tr>
+				</table>
+
+				<h3> Class Year </h3>
+				<select id="class-year" name="class-year">
+					<option> Freshman </option>
+					<option> Sophomore </option>
+					<option> Junior </option>
+					<option> Senior </option>
+				</select>
+
+				<!-- A group of radio buttons -->
+				<h3> Classroom Assignment </h3>
+				<input type="radio" id="C102" name="classroom" value="C102"/>
+				<label for="C102"> C102 </label>
+				<input type="radio" id="C210" name="classroom" value="C210"/>
+				<label for="C210"> C210 </label>
+				<input type="radio" id="C229" name="classroom" value="C229"/>
+				<label for="C229"> C229 </label>
+
+				<h3> Upload Transcript </h3>
+				<input type="file" id="transcript" name="transcript" accept=".pdf,.doc,.docx"/>
+
+				<br/>
+				<br/>
+
+				<div>
+					<button type="reset"> Clear </button>
+					<button type="submit"> Submit </button>
+				</div>
+			</form>
+		</main>
+
+		<footer>
+			<p>
+				Copyright &copy; 2026 Ryan Smith
+				&lt;<a href="mailto:smithrm23@juniata.edu">smithrm23@juniata.edu</a>&gt;
+			</p>
+		</footer>
+	</body>
+</html>
