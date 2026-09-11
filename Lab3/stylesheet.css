@@ -83,10 +83,15 @@ main {
 	background-color: #4d9d52;
 }
 
+.plant-card img {
+	max-width: 100%;
+	height: auto;
+}
+
 .content {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 32px;
+	gap: 16px;
 	margin: 16px;
 }
 
@@ -154,6 +159,14 @@ td {
 }
 
 /* -------------------------------------------------------------------------- */
+/*                              Content / Habitat                             */
+/* -------------------------------------------------------------------------- */
+
+#habitat p {
+	text-align: justify;
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                Introduction                                */
 /* -------------------------------------------------------------------------- */
 
@@ -189,7 +202,7 @@ td {
 }
 
 #submit-plant-form section {
-	max-width: 75%;
+	max-width: 75vw;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -229,7 +242,13 @@ td {
 	color: #4d9d52;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                              Responsive Design                             */
+/* -------------------------------------------------------------------------- */
+
 @media(max-width: 480px) {
+	/* Adjust heading sizes on smaller screens */
+	
 	#header {
 		padding: 20px 10px;
 	}
@@ -237,6 +256,8 @@ td {
 	#header h1 {
 		font-size: 24px;
 	}
+
+	/* Use a vertical navbar */
 
 	.navbar {
 		flex-direction: column;
@@ -248,16 +269,47 @@ td {
 		text-align: center;
 	}
 
+	/* Adjust main content margins and padding */
 	main {
 		margin: 10px;
 		padding: 10px;
 	}
 
-	.plant-card {
-		padding: 15px;
+	/* Reduce spacing to fit content vertically */
+	.plant-card h3 {
+		padding: 0;
+		margin: 0;
 	}
 
+	/* Scale down the images on the plant cards */ 
+	.plant-card img {
+		width: 90%;
+		height: auto;
+	}
+
+	/* Collapse the info grid to a single column */
+	.content {
+		grid-template-columns: 1fr;
+	}
+
+	/* Collapse the table to a single column and adjust font size */
+
 	table {
+		font-size: 14px;
+	}
+
+	th, td {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Allow the table to take up the full width of the screen */
+	#submit-plant-form section {
+		max-width: 100vw;
+	}
+
+	/* Reduce the footer font size so it fits on a single line */
+	#footer {
 		font-size: 14px;
 	}
 }
