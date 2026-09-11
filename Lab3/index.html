@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="stylesheet.css"/>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> IT-340 Lab #3 </title>
+	</head>
+
+	<body>
+		<header id="header">
+			<h1> Native Plant App </h1>
+		</header>
+
+		<nav class="navbar">
+			<a href="index.html"> Home </a>
+			<a href="javascript:void(0);"> About Us </a>
+			<a href="javascript:void(0);"> Our Mission </a>
+			<a href="javascript:void(0);"> Contact Us </a>
+		</nav>
+
+		<main>
+			<div class="container">
+				<article class="plant-card">
+					<h2> Blue Wood Aster </h2>
+					
+					<section>
+						<h3> Image </h3>
+						<img src="images/symphyotrichum-cordifolium.jpg" alt="Blue Wood Aster" width="500" height="300"/>
+						<br/>
+						<i>
+							<a href="https://azuregpcentralv2.blob.core.windows.net/media/Default/_Profiles/f4194ab2/60688025/20201002_173604.jpg?v=638257914320000000">
+								Source
+							</a>
+						</i>
+					</section>
+
+					<div class="content">
+						<section id="quick-facts">
+							<h3> Quick Facts </h3>
+
+							<table>
+								<tr>
+									<th> Scientific Name </th>
+									<td> <i> Symphyotrichum cordifolium </i> </td>
+								</tr>
+
+								<tr>
+									<th> Height </th>
+									<td> 1-4 feet tall </td>
+								</tr>
+
+								<tr>
+									<th> Bloom Time </th>
+									<td>
+										Flowers between June and November. In southern climates, it may bloom earlier (June through August)
+										and in northern climates, it may bloom later (September through November).
+									</td>
+								</tr>
+
+								<tr>
+									<th> Light Requirements </th>
+									<td> Requires sun </td>
+								</tr>
+
+								<tr>
+									<th> Soil Requirements </th>
+									<td>
+										Requires moist soil, prefers clay, loam, or sand.
+										<br/>
+										Medium CaCo<sub>3</sub> tolerance.
+									</td>
+								</tr>
+
+								<tr>
+									<th> Water use </th>
+									<td> Low </td>
+								</tr>
+							</table>
+						</section>
+
+						<section id="description">
+							<h3> Description </h3>
+							<p>
+								This native perennial aster is fairly easy to identify because of its sharp-toothed broad, heart-
+								shaped leaves, often deeply notched at their base. Because it is a variable species, it can be
+								mistaken for the large-leaved aster that has much bigger leaves and for Schreber's aster which has
+								white flowers and a more blunt indentation at the petiole. The heartleaf aster has composite flowers
+								1/2 to 5/8 inch in diameter, formed in dense dome-shaped clusters. The 14-20 central disc flowers turn
+								red early while the 8-15 ray flowers are pale blue-violet. The floral bracts are smooth, narrow, and
+								blunt. The upper leaves may lack the deep notch of the lower leaves and may be more oval in shape.
+
+								<br/>
+								<br/>
+
+								The heartleaf aster grows one to four feet tall and blooms between August and October. It is found in
+								rich moist soil of open woods and clearings in sun or shade. It grows in southern Canada and the
+								northeastern United States but can be found further south in the mountains. It can be found growing in
+								most counties of Western Pennsylvania. A variety of insects, including bumblebees, visit the flowers for
+								nectar. It is also called the blue wood aster (<i><a href="https://www.paenflowered.org/apgii/asterales/asteraceae/symphyotrichum/symphyotrichum-cordifolium">Source</a></i>).
+							</p>
+						</section>
+
+						<section id="habitat">
+							<h3> Habitat and Native Range </h3>
+							<p>
+								Common in woods, meadows, and roadsides. Present throughout the state.
+								
+								<br/>
+								<br/>
+								
+								<b>Wetland code:</b> Not classified
+								<br/>
+								<b>USDA Symbol:</b> <a href="https://plants.sc.egov.usda.gov/plant-profile/SYCO4">SYCO4</a>
+								<br/>
+								<b>USDA Native Status:</b> L48 (N), CAN (N)
+								(<i><a href="https://www.wildflower.org/plants/result.php?id_plant=SYCO4">Source</a></i>)
+							</p>
+						</section>
+					</div>
+				</article>
+			</div>
+
+			<form action="index.html" id="submit-plant-form">
+				<!-- Create a form that allows a user to submit information about another plant.-->
+				
+				<section>
+					<h2> Submit a Native Plant </h2>
+					<table>
+						<tr>
+							<th> Plant Name </th>
+							<td>
+								<input type="text" id="plant-name" name="plantName" placeholder="Plant Name"/>
+							</td>
+						</tr>
+
+						<tr>
+							<th> Scientific Name </th>
+							<td>
+								<input type="text" id="scientific-name" name="scientificName" placeholder="Scientific Name"/>
+							</td>
+						</tr>
+
+						<tr>
+							<th> Description </th>
+							<td>
+								<input id="description" name="description" placeholder="Description"/>
+							</td>
+						</tr>
+
+						<tr>
+							<th> Plant Type </th>
+							<td>
+								<input type="radio" id="flower" name="plantType" value="flower"/>
+								<label for="flower"> Flower </label>
+								
+								<input type="radio" id="tree" name="plantType" value="tree"/>
+								<label for="tree"> Tree </label>
+								
+								<input type="radio" id="shrub" name="plantType" value="shrub"/>
+								<label for="shrub"> Shrub </label>
+								
+								<input type="radio" id="climber" name="plantType" value="climber"/>
+								<label for="climber"> Climber </label>
+							</td>
+						</tr>
+
+						<tr>
+							<th> Upload an Image </th>
+							<td>
+								<input type="file" id="image-upload" name="imageUpload" accept="image/*"/>
+							</td>
+						</tr>
+					</table>
+					
+					<br/>
+
+					<div class="form-buttons">
+						<button type="reset"> Reset </button>
+						<button type="submit"> Submit </button>
+					</div>
+				</section>
+			</form>
+		</main>
+
+		<br/>
+
+		<footer id="footer">
+			Copyright &copy; 2026 Ryan Smith &lt;<a href="mailto:smithrm23@juniata.edu">smithrm23@juniata.edu</a>&gt;
+		</footer>
+	</body>
+</html>
