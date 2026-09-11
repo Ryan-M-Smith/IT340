@@ -1,0 +1,91 @@
+<!--
+Filename: contact.html
+Description: Contact page | IT-340 Homework #2
+Copyright (c) 2026 Ryan Smith <smithrm23@juniata.edu>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="stylesheet.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> The Pennsylvania Botanical Garden </title>
+	</head>
+
+	<body>
+		<header id="header">
+			<div id="title">
+				<h1> The Pennsylvania Botanical Garden </h1>
+				<div id="slogan">
+					<p> Pennsylvania's finest botanical garden  </p>
+					<p> Established 1858 </p>
+				</div>
+			</div>
+
+			<nav>
+				<a href="index.html"> Home </a>
+				<a href="plants.html"> Plants </a>
+				<a href="contact.html"> Contact </a>
+			</nav>
+		</header>
+
+		<main>
+			<form action="index.html" id="contact">
+				<section>
+					<h2> Contact Us </h2>
+
+					<table>
+						<tr>
+							<th> Name </th>
+							<td>
+								<input type="text" id="name" name="name" placeholder="Name" required/>
+							</td>
+						</tr>
+
+						<tr>
+							<th> Email Address </th>
+							<td>
+								<input type="email" id="email" name="email" placeholder="name@example.com" required/>
+							</td>
+						</tr>
+
+						<tr>
+							<th> Subject </th>
+							<td>
+								<input type="text" id="subject" name="subject" placeholder="Your subject line" required/>
+							</td>
+						</tr>
+
+						<tr>
+							<th> Message </th>
+							<td>
+								<input type="text" id="message" name="message" placeholder="Leave us a message"  required/>
+							</td>
+						</tr>
+
+						<tr>
+							<th> Contact Method </th>
+							<td>
+								<select id="contact-method" name="contact-method" required>
+									<option> Email </option>
+									<option> Phone call </option>
+									<option> Text message </option>
+								</select>
+							</td>
+						</tr>
+					</table>
+
+					<div class="form-buttons">
+						<button type="reset"> Reset </button>
+						<button type="submit"> Submit </button>
+					</div>
+				</section>
+			</form>
+		</main>
+
+		<footer id="footer">
+			Copyright &copy; 2026 Ryan Smith &lt;<a href="mailto:smithrm23@juniata.edu">smithrm23@juniata.edu</a>&gt;
+		</footer>
+	</body>
+</html>
