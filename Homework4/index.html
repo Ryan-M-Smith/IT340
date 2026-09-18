@@ -1,0 +1,51 @@
+<!--
+Filename: index.html
+Description: Home page | IT-340 Homework #4
+Copyright (c) 2026 Ryan Smith <smithrm23@juniata.edu>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Home </title>
+	</head>
+
+	<body>
+		<header id="header">
+			<div id="title">
+				<h1> Native Plant App </h1>
+			</div>
+
+			<nav>
+				<a href=index.html> Home </a>
+				<a href=find-plants.html> Find Plants </a>
+				<a href=about.html> About </a>
+			</nav>
+		</header>
+
+		<main class="hero">
+			<h2> Learn more about Native Plants! </h2>
+			<p>
+				Search below to find out more about all the beautiful native plants that Pennsylvania has to offer.
+				You can also click on the "Find Plants" link in the navigation bar to see a list of all the native
+				plants in our database.
+			</p>
+
+			<form class="search-bar" action="find-plants.html" method="get">
+			<label for="plant-search">Find a native plant</label>
+			
+			<div class="search-controls">
+				<input id="plant-search" name="q" type="search" placeholder="Search for a plant...">
+				<button type="submit">Search</button>
+			</div>
+		</form>
+		</main>
+
+		<footer id="footer">
+			Copyright &copy; 2026 Ryan Smith &lt;<a href="mailto:smithrm23@juniata.edu">smithrm23@juniata.edu</a>&gt;
+		</footer>
+	</body>
+</html>

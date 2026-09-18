@@ -1,0 +1,315 @@
+/**
+ * Filename: styles.css
+ * Description: Site-wide stylesheet | IT-340 Homework #4
+ * Copyright (c) 2026 Ryan Smith <smithrrm23@juniata.edu>
+ */
+
+/* -------------------------------------------------------------------------- */
+/*                                Global Styles                               */
+/* -------------------------------------------------------------------------- */
+
+* {
+	/* Color palette - https://coolors.co/8b94a3-8cfbde-0fff95-06ba63-103900 */
+	--lavender-grey: #8b94a3;
+	--aquamarine: #8cfbde;
+	--spring-green: #0fff95;
+	--emerald: #06ba63;
+	--black-forest: #103900;
+
+	box-sizing: border-box;
+
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	background-color: var(--lavender-grey);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                        Header, Title, and Navigation                       */
+/* -------------------------------------------------------------------------- */
+
+#header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: var(--black-forest);
+	background-color: var(--emerald);
+}
+
+#title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+#header nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#header nav a {
+	color: var(--black-forest);
+	background-color: var(--aquamarine);
+	padding: 8px 0px;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+}
+
+#header nav a:hover {
+	background-color: var(--spring-green);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+#footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: auto;
+	padding: 10px 8px;
+	color: #ffffff;
+	background-color: #222222;
+	text-align: center;
+}
+
+#footer a {
+	color: var(--aquamarine);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Hero section                                */
+/* -------------------------------------------------------------------------- */
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 60vw;
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.hero p {
+	text-align: justify;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	max-width: 60vw;
+	margin: 30px auto;
+	padding: 20px;
+	background-color: var(--emerald);
+	border: 2px solid var(--black-forest);
+	border-radius: 16px;
+	color: var(--black-forest);
+}
+
+.content .section h2 {
+	text-align: center;
+}
+
+.content .section p {
+	text-align: justify;
+}
+
+.content a {
+	color: var(--black-forest);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Search Bar                                 */
+/* -------------------------------------------------------------------------- */
+
+.search-bar {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 20px;
+	margin-top: 40px;
+	background-color: var(--emerald);
+	border: 2px solid var(--black-forest);
+	border-radius: 16px;
+	color: var(--black-forest);
+}
+
+.search-bar label {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.search-controls {
+	display: flex;
+	gap: 10px;
+}
+
+.search-bar input {
+	flex: 1;
+	min-width: 0;
+	padding: 10px;
+	border: 1px solid var(--black-forest);
+	border-radius: 8px;
+	font-size: 1rem;
+}
+
+.search-bar button {
+	padding: 10px 18px;
+	background-color: var(--aquamarine);
+	color: var(--black-forest);
+	border: 1px solid var(--black-forest);
+	border-radius: 8px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.search-bar button:hover {
+	background-color: var(--spring-green);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Cards and Card Container                          */
+/* -------------------------------------------------------------------------- */
+
+.plant-container {
+	margin: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+}
+
+.plant-container.vertical {
+	grid-template-columns: 1fr;
+}
+
+.plant-card {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 20px;
+	border: 2px solid var(--black-forest);
+	color: var(--black-forest);
+	background-color: var(--emerald);
+	border-radius: 16px;
+	text-align: center;
+}
+
+.plant-card .card-content {
+	display: flex;
+	gap: 20px;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.plant-card .card-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	text-align: justify;
+}
+
+.plant-card img {
+	width: 42%;
+	max-width: 220px;
+	aspect-ratio: 1;
+	height: auto;
+	object-fit: cover;
+	border: 2px solid var(--black-forest);
+	border-radius: 12px;
+}
+
+.plant-card .view-details {
+	display: block;
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: var(--black-forest);
+	background-color: var(--aquamarine);
+	border: 1px solid var(--black-forest);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.plant-card .view-details.back {
+	max-width: 150px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Responsive Design                             */
+/* -------------------------------------------------------------------------- */
+
+@media(max-width: 768px) {
+	.hero {
+		max-width: 90vw;
+		width: auto;
+		margin: 30px auto;
+	}
+
+	.content {
+		max-width: none;
+		margin: 20px 8px;
+		padding: 16px;
+	}
+
+	#footer {
+		font-size: 14px;
+	}
+	
+	.plant-container {
+		grid-template-columns: 1fr;
+	}
+
+	nav {
+		flex-direction: column;
+	} 
+
+	.search-bar {
+		max-width: none;
+		margin: 20px 0 0;
+	}
+
+	.search-controls {
+		flex-direction: column;
+	}
+
+	.plant-card .card-content {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.plant-card img {
+		width: 70%;
+		margin: 0;
+	}
+
+	.plant-container.vertical {
+		margin: 20px 8px;
+	}
+
+	.plant-container.vertical .back {
+		max-width: 100%;
+	}
+
+	.plant-container.vertical .card-text h2 {
+		text-align: center;
+	}
+
+	.plant-container.vertical .plant-card img {
+		width: 100%;
+	}
+}
