@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/script.js" defer></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Movie Explorer </title>
+	</head>
+
+	<body>
+		<header>
+			<h1> Movie Explorer </h1>
+			<p> Explore movies using JavaScript. </p>
+		</header>
+
+		<main>
+			<section class="controls">
+				<label for="search-input"> Search Movies: </label>
+				<input type="text" id="search-input" placeholder="Enter a movie title...">
+			
+				<label for="genre-filter"> Filter by Genre: </label>
+				<select id="genre-filter">
+					<option value="All"> All Genres </option>
+					<option value="Action"> Action </option>
+					<option value="Animation"> Animation </option>
+					<option value="Crime"> Crime </option>
+					<option value="Drama"> Drama </option>
+					<option value="Science Fiction"> Science Fiction </option>
+					<option value="Adventure"> Adventure </option>
+				</select>
+
+				<label for="year-flter"> Filter by Year: </label>
+				<select id="year-filter">
+					<option value="All"> All Years </option>
+					<option value="1990"> Before 2000 </option>
+					<option value="2000"> 2000 and Later </option>
+				</select>
+
+				<button id="reset-button" type="reset"> Reset Filters </button>
+			</section>
+
+			<p id="movie-count"></p>
+			
+			<section id="movie-container">
+				<!-- Movies will be dynamically rendered here -->
+			</section>
+		</main>
+	</body>
+</html>
