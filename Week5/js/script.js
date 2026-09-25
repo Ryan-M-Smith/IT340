@@ -72,8 +72,6 @@ function filterMovies() {
 	const genre = genreFilter.value;
 	const year = parseInt(yearFilter.value);
 
-	console.log(query, genre, year);
-
 	const filtered = movies.filter((movie) => {
 		const matchesSearch = movie.title.toLowerCase().includes(query);
 		const matchesGenre = genre === "All" || movie.genre === genre;
