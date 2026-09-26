@@ -1,0 +1,155 @@
+/**
+ * Filename: styles.css
+ * Description: Site-wide stylesheet | IT-340 Homework #5
+ * Copyright (c) 2026 Ryan Smith <smithrrm23@juniata.edu>
+ */
+
+/* -------------------------------------------------------------------------- */
+/*                                Global Styles                               */
+/* -------------------------------------------------------------------------- */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #c2fcd8;
+}
+
+header {
+	text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Plant Card and Container                          */
+/* -------------------------------------------------------------------------- */
+
+#plant-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.plant-card {
+	display: flex;
+	flex-direction: column;
+	background-color: #adb8bf;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	padding: 10px 16px;
+	gap: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.plant-card h2 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.plant-card img {
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	border: 2px solid #000000;
+	border-radius: 8px;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: 20px;
+}
+
+.plant-info {
+	text-align: left;
+	gap: 30px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Search/Filter Bar                             */
+/* -------------------------------------------------------------------------- */
+
+#filters {
+	display: flex;
+	align-items: stretch;
+	gap: 10px;
+	height: 100%;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: #adb8bf;
+	border: 2px solid #000000;
+	border-radius: 20px;
+}
+
+#filters input {
+	width: 50%;
+	padding: 10px;
+	border: 1.5px solid #000000;
+	border-radius: 10px;
+	background-color: #f5f7f6;
+	color: #000000;
+	font-size: 16px;
+}
+
+#filters select {
+    flex: 1;
+    padding: 10px;
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+    background-color: #f5f7f6;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#filters #reset-button {
+	padding: 10px 20px;
+	border: 1.5px solid #000000;
+	border-radius: 8px;
+	background-color: #f5f7f6;
+	color: #000000;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Responsive Design                             */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+	body {
+		padding: 10px;
+	}
+	
+	#plant-container {
+		grid-template-columns: 1fr;
+	}
+
+	.plant-card {
+		flex-direction: column;
+		align-items: center;
+		/* padding: 2px 20px; */
+	}
+
+	.plant-card img {
+		width: 100%;
+		height: 200px;
+	}
+
+	.content {
+		flex-direction: column;
+		align-items: center;
+		gap: 0;
+	}
+
+	#filters {
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	#filters input, #filters select {
+		width: 100%;
+		box-sizing: border-box;
+	}
+}

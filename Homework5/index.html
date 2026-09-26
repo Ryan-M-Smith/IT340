@@ -1,0 +1,49 @@
+<!--
+Filename: index.html
+Description: Home page | IT-340 Homework #5
+Copyright (c) 2026 Ryan Smith <smithrm23@juniata.edu>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/script.js" defer></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Native Plant Search </title>
+	</head>
+
+	<body>
+		<header>
+			<h1> Native Plant Search </h1>
+		</header>
+
+		<main>
+			<section id="filters">
+				<input type="text" id="search" placeholder="Search for a plant..." />
+
+				<select id="sun-filter">
+					<option value="All"> All Sunlight Requirements </option>
+					<option value="Full Sun"> Full Sun </option>
+					<option value="Partial Shade"> Partial Shade </option>
+					<option value="Full Shade"> Full Shade </option>
+				</select>
+
+				<select id="bloom-filter">
+					<option value="All"> All Bloom Times </option>
+					<option value="Spring"> Spring </option>
+					<option value="Summer"> Summer </option>
+					<option value="Fall"> Fall </option>
+					<option value="Winter"> Winter </option>
+				</select>
+
+				<button id="reset-button" type="reset"> Reset Filters </button>
+			</section>
+
+			<section id="plant-container">
+				<!-- Plants will be dynamically rendered here -->
+			</section>
+		</main>
+	</body>
+</html>
