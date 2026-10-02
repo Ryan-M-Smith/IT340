@@ -130,3 +130,5 @@ function showMovieStats() {
 		<p>Average rating: ${averageRating.toFixed(2)}</p>
 	`;
 }
+
+window.addEventListener("load", () => allMovies());
