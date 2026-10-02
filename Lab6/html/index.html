@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="../css/styles.css">
+		<script src="../js/script.js" defer></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Plant Collection </title>
+	</head>
+
+	<body>
+		<header>
+			<h1> My Plant Collection </h1>
+			<p> Explore my collection of plants. </p>
+		</header>
+
+		<main>
+			<div class="buttons">
+				<button onclick="allPlants()"> All Plants </button>
+				<button onclick="sortAZ()"> Sort A-Z </button>
+				<button onclick="findPlant()"> Find Plant </button>
+				<button onclick="filterBySunlight()"> Filter by Sunlight </button>
+				<button onclick="filterByBloom()"> Filter by Bloom Season </button>
+				<button onclick="filterByHeight()"> Filter by Height </button>
+				<button onclick="showPlantStats()"> Plant Stats </button>
+			</div>
+
+			<div id="plant-list">
+				<!-- Plants will be dynamically rendered here -->
+			</div>
+
+			<div id="stats">
+				<!-- Plant stats will be dynamically rendered here -->
+			</div>
+		</main>
+	</body>
+</html>
