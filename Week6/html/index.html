@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="../css/styles.css">
+		<script src="../js/script.js" defer></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Movie Collection </title>
+	</head>
+
+	<body>
+		<header>
+			<h1> My Movie Collection </h1>
+			<p> Explore my collection of movies. </p>
+		</header>
+
+		<main>
+			<div class="buttons">
+				<button onclick="allMovies()"> All Movies </button>
+				<button onclick="sortAZ()"> Sort A-Z </button>
+				<button onclick="filterByGenre()"> Filter by Genre </button>
+				<button onclick="filterByYear()"> Filter by Year </button>
+				<button onclick="filterByRating()"> Rating 8+ </button>
+				<button onclick="showMovieStats()"> Movie Stats </button>
+			</div>
+
+			<div id="movie-list">
+				<!-- Movies will be dynamically rendered here -->
+			</div>
+
+			<div id="stats">
+				<!-- Movie stats will be dynamically rendered here -->
+			</div>
+		</main>
+	</body>
+</html>
