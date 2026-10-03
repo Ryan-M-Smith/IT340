@@ -1,0 +1,135 @@
+/**
+ * Filename: styles.css
+ * Description: Site-wide stylesheet | IT-340 Homework #5
+ * Copyright (c) 2026 Ryan Smith <smithrrm23@juniata.edu>
+ */
+
+/* -------------------------------------------------------------------------- */
+/*                                Global Styles                               */
+/* -------------------------------------------------------------------------- */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #c2fcd8;
+}
+
+header {
+	text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Plant Card and Container                          */
+/* -------------------------------------------------------------------------- */
+
+#plant-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.plant-card {
+	display: flex;
+	flex-direction: column;
+	background-color: #adb8bf;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	padding: 10px 16px;
+	gap: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.plant-card h2 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.plant-card img {
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	border: 2px solid #000000;
+	border-radius: 8px;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: 20px;
+}
+
+.plant-info {
+	text-align: left;
+	gap: 30px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Stats View                                 */
+/* -------------------------------------------------------------------------- */
+
+#stats-container {
+	align-items: stretch;
+	gap: 10px;
+	height: 100%;
+	margin: 20px auto;
+	padding: 10px 16px;
+	background-color: #adb8bf;
+	border: 2px solid #000000;
+	border-radius: 20px;
+}
+
+#stats-container h2 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+	row-gap: 0;
+	justify-content: center;
+	align-items: start;
+	text-align: justify;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Responsive Design                             */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+	body {
+		padding: 10px;
+	}
+	
+	#plant-container {
+		grid-template-columns: 1fr;
+	}
+
+	.plant-card {
+		flex-direction: column;
+		align-items: center;
+		/* padding: 2px 20px; */
+	}
+
+	.plant-card img {
+		width: 100%;
+		height: 200px;
+	}
+
+	.content {
+		flex-direction: column;
+		align-items: center;
+		gap: 0;
+	}
+
+	.stats {
+		grid-template-columns: repeat(1, 1fr);
+		text-align: left;
+		gap: 0;
+	}
+}
