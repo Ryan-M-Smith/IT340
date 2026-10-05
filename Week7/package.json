@@ -1,5 +1,6 @@
 {
-  "name": "movie-watchlist",
+  "name": "week-7",
+  "description": "A simple movie watchlist created with React, Vite, and JavaScript. IT-340 Week 7 Code.",
   "private": true,
   "version": "1.0.0",
   "type": "module",
