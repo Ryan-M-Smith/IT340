@@ -1,15 +1,14 @@
 import Footer from "./components/Footer"
-import Navbar from "./components/Navbar"
-
-import "./App.css"
+import MovieList from "./components/MovieList";
+import Navigation from "./components/Navigation"
 
 export default function App() {
 	return (
 		<>
-			<Navbar/>
+			<Navigation/>
 
 			<main>
-				<h2> Movies </h2>
+				<MovieList/>
 			</main>
 
 			<Footer/>

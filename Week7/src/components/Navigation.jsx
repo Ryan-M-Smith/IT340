@@ -1,4 +1,4 @@
-export default function Navbar() {
+export default function Navigation() {
 	return (
 		<nav>
 			<h1> My Movie Watchlist </h1>
