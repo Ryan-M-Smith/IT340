@@ -1,1 +1,60 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f3f4f6;
+	color: #222222;
+}
 
+.app {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+h1 {
+	color: #253858;
+}
+
+input, select {
+	padding: 12px;
+	margin: 8px 8px 8px 0;
+	border: 1px solid #cccccc;
+	border-radius: 6px;
+	font-size: 16px;
+}
+
+/* Remove default styling for select elements on Safari */
+select {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.movie-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 20px;
+}
+
+.movie-card {
+	background: #ffffff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 2px 4px #00000015;
+}
+
+.movie-card h2 {
+	color: #3157a4;
+}
+
+button {
+	padding: 10px 14px;
+	border: none;
+	border-radius: 6px;
+	background-color: #3157a4;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #4781f4;
+}

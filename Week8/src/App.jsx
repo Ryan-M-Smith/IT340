@@ -117,7 +117,7 @@ export default function App() {
 			) : (
 				<div className="movie-list">
 					{filtered.map(({ id, title, genre, year }) => (
-						<div key={id} className="movie">
+						<div key={id} className="movie-card">
 							<h2> {title} </h2>
 							<p> Genre: {genre} </p>
 							<p> Year: {year} </p>
