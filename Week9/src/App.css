@@ -1,0 +1,91 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(135deg, #e0f2fe, #fce7f3);
+	min-height: 100vh;
+}
+
+.app {
+	text-align: center;
+	padding: 40px 20px;
+}
+
+h1 {
+	color: #1e3a8a;
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+h2 {
+	color: #374151;
+	margin-top: 25px;
+}
+
+.dog-card {
+	background-color: #ffffff;
+	max-width: 500px;
+	margin: 30px auto;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+button {
+	background-color: #2563eb;
+	color: #ffffff;
+	border: none;
+	padding: 12px 24px;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+	background-color: #1d4ed8;
+	transform: translateY(-2px);
+}
+
+button:disabled {
+	background-color: #9ca3af;
+	cursor: not-allowed;
+	transform: none;
+}
+
+.dog-image {
+	width: 100%;
+	max-width: 350px;
+	max-height: 350px;
+	object-fit: contain;
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+.loading {
+	color: #2563eb;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.error {
+	color: #dc2626;
+	background-color: #fee2e2;
+	padding: 12px;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+
+@media(max-width: 600px) {
+	.app {
+		padding: 25px 15px;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	.dog-card {
+		padding: 20px;
+	}
+}
