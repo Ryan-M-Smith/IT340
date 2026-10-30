@@ -93,35 +93,38 @@ app.put("/plants/:id", (req, res) => {
 		return res.status(400).json({ error });
 	}
 
-	const plantIndex = plants.findIndex(({ id }) => id === plantId);
+	const index = plants.findIndex(({ id }) => id === plantId);
 
-	if (plantIndex === -1) {
+	if (index === -1) {
 		return res.status(404).json({ error: "Plant not found" });
 	}
 
 	const { name, height, sun, color } = body;
 	const updatedPlant = {
-		...plants[plantIndex],
+		...plants[index],
 		name,
 		height,
 		sun,
 		color,
 	};
 
-	plants[plantIndex] = updatedPlant;
+	plants[index] = updatedPlant;
 	return res.status(200).json(updatedPlant);
 });
 
 app.delete("/plants/:id", (req, res) => {
 	const plantId = parseInt(req.params.id, 10);
-	const plantIndex = plants.findIndex(({ id }) => id === plantId);
+	const index = plants.findIndex(({ id }) => id === plantId);
 
-	if (plantIndex === -1) {
+	if (index === -1) {
 		return res.status(404).json({ error: "Plant not found" });
 	}
 
-	plants = plants.filter(({ id }) => id !== plantId);
-	return res.status(204).send();
+	const [ removed ] = plants.splice(index, 1);
+	return res.status(200).json({
+		message: "Plant deleted successfully",
+		plant: removed
+	});
 });
 
 // Launch the server
