@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Cardinal Flower",
+    "scientificName": "Lobelia cardinalis",
+    "description": "Slender spikes of bright red, irregularly shaped flowers draw our attention along stream banks and around the edges of wetlands. The cardinal flower likes to grow in clumps and because of its shape is pollinated by hummingbirds.",
+    "sunlight": "Full Sun",
+    "soil": "Moist",
+    "water": "Keep consistently moist",
+    "height": 2,
+    "bloomSeason": "Summer",
+    "nativeRange": "Pennsylvania and eastern North America",
+    "wildlifeBenefits": "Attracts hummingbirds and butterflies",
+    "image": "https://azuregpcentralv2.blob.core.windows.net/media/Default/_Profiles/f4194ab2/dbf849b6/cardinal%20flower28944M4.jpg?v=638254494360000000"
+  },
+  {
+    "name": "Scarlet Beebalm",
+    "scientificName": "Monarda didyma",
+    "description": "A moisture-loving perennial with vivid crimson blooms and highly aromatic mint-scented foliage. It forms dense colonies in moist thickets and stream edges, serving as a prime nectar source for hummingbirds and swallowtail butterflies.",
+    "sunlight": "Partial Shade",
+    "soil": "Moist",
+    "water": "Water regularly to maintain moisture",
+    "height": 3,
+    "bloomSeason": "Summer",
+    "nativeRange": "Pennsylvania and eastern North America",
+    "wildlifeBenefits": "Attracts hummingbirds and butterflies",
+    "image": "https://azuregpcentralv2.blob.core.windows.net/media/Default/_Profiles/c53187a5/b2f4f27d/DSC07099.JPG?v=637779673790000000"
+  },
+  {
+    "name": "Eastern Red Columbine",
+    "scientificName": "Aquilegia canadensis",
+    "description": "A woodland perennial featuring distinctive nodding red and yellow bell-like blossoms with backward-projecting spurs. It thrives in well-drained rocky woods, slopes, and cliffs across Pennsylvania.",
+    "sunlight": "Partial Shade",
+    "soil": "Well-drained",
+    "water": "Water moderately; allow soil to dry slightly",
+    "height": 2,
+    "bloomSeason": "Spring",
+    "nativeRange": "Eastern North America, including Pennsylvania",
+    "wildlifeBenefits": "Attracts hummingbirds and bees",
+    "image": "https://azuregpcentralv2.blob.core.windows.net/media/Default/_Profiles/f4194ab2/e9469617/20200502_175215.jpg?v=638236206790000000"
+  },
+  {
+    "name": "Wild Bergamot",
+    "scientificName": "Monarda fistulosa",
+    "description": "An aromatic herbaceous perennial with lavender to purple tubular flowers arranged in ragged crown-like terminal heads. Commonly found in sunny meadows, roadsides, and woodland borders, it is deer-resistant and loved by pollinators.",
+    "sunlight": "Full Sun",
+    "soil": "Average to dry",
+    "water": "Water moderately; drought-tolerant once established",
+    "height": 4,
+    "bloomSeason": "Summer",
+    "nativeRange": "Pennsylvania and much of North America",
+    "wildlifeBenefits": "Attracts bees, butterflies, and hummingbirds",
+    "image": "https://azuregpcentralv2.blob.core.windows.net/media/Default/_Profiles/c53187a5/47fd09fc/20180714_195058.jpg?v=637503457090000000"
+  },
+  {
+    "name": "Spotted Joe-Pye-Weed",
+    "scientificName": "Eutrochium maculatum",
+    "description": "This wildflower is distinguished from other similar species by its deep purple or purple-spotted stem. The leaves of this species are about 8 inches long, thick and toothed and arise in whorls of four to five from a stem with a solid interior.",
+    "sunlight": "Full Sun",
+    "soil": "Moist",
+    "water": "Keep consistently moist",
+    "height": 6,
+    "bloomSeason": "Summer",
+    "nativeRange": "Eastern North America, including Pennsylvania",
+    "wildlifeBenefits": "Attracts bees and butterflies",
+    "image": "https://azuregpcentralv2.blob.core.windows.net/media/Default/_Profiles/ff80bf15/48fdd4ca/joe%20pye%20weed63850M2.jpg?v=638025776370000000"
+  }
+]
