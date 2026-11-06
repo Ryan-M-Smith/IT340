@@ -1,0 +1,22 @@
+[
+  { "name": "Max", "breed": "Golden Retriever", "age": 4, "color": "Golden" },
+  { "name": "Bella", "breed": "Labrador Retriever", "age": 3, "color": "Black" },
+  { "name": "Charlie", "breed": "Beagle", "age": 5, "color": "Tricolor" },
+  { "name": "Luna", "breed": "German Shepherd", "age": 2, "color": "Black and tan" },
+  { "name": "Cooper", "breed": "Bulldog", "age": 6, "color": "White and brown" },
+  { "name": "Daisy", "breed": "Poodle", "age": 4, "color": "White" },
+  { "name": "Rocky", "breed": "Rottweiler", "age": 7, "color": "Black and tan" },
+  { "name": "Lucy", "breed": "Dachshund", "age": 1, "color": "Red" },
+  { "name": "Milo", "breed": "Shih Tzu", "age": 3, "color": "White and brown" },
+  { "name": "Sadie", "breed": "Boxer", "age": 5, "color": "Fawn" },
+  { "name": "Tucker", "breed": "Border Collie", "age": 2, "color": "Black and white" },
+  { "name": "Molly", "breed": "Cocker Spaniel", "age": 8, "color": "Brown" },
+  { "name": "Bear", "breed": "Siberian Husky", "age": 4, "color": "Gray and white" },
+  { "name": "Maggie", "breed": "Australian Shepherd", "age": 6, "color": "Merle" },
+  { "name": "Duke", "breed": "Great Dane", "age": 3, "color": "Blue" },
+  { "name": "Sophie", "breed": "Chihuahua", "age": 2, "color": "Cream" },
+  { "name": "Oliver", "breed": "Pomeranian", "age": 5, "color": "Orange" },
+  { "name": "Ruby", "breed": "French Bulldog", "age": 4, "color": "Brindle" },
+  { "name": "Finn", "breed": "Jack Russell Terrier", "age": 1, "color": "White and tan" },
+  { "name": "Willow", "breed": "Mixed Breed", "age": 7, "color": "Brown and white" }
+]
