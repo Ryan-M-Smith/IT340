@@ -12,16 +12,16 @@ The application uses two request flows:
 
 ```text
 React client
-    ↓ fetch("/api/plants")
+    v fetch("/api/plants")
 Express API
-    ↓ Mongoose
+    v Mongoose
 MongoDB (PlantDatabase)
 ```
 
 MongoDB results return through the same layers:
 
 ```text
-MongoDB → Express API → React plant catalog
+MongoDB -> Express API -> React plant catalog
 ```
 
 The API supports retrieving, searching, creating, updating, and deleting
