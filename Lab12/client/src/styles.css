@@ -1,0 +1,165 @@
+:root {
+	font-family: "Arial", "Helvetica", sans-serif;
+	color: #202938
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 52px 0 32px;
+}
+
+button,
+input,
+textarea,
+select {
+	font: inherit;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: min(1100px, 92%);
+	margin: 0 auto;
+	gap: 1.25rem;
+}
+
+.hero h1 {
+	margin: 7px 0 10px;
+	font-size: 2.5rem;
+	letter-spacing: -0.04em;
+}
+
+.hero > p:last-child {
+	color: #657184;
+	font-size: 1.05rem;
+}
+
+.hero-text {
+	color: #58718f;
+	font-size: 0.75rem;
+	font-weight: 800;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.panel {
+	background: #ffffff;
+	border: 1px solid #e2e7ee;
+	border-radius: 16px;
+	box-shadow: 0 8px 24px rgba(28, 43, 58, 0.039);
+	padding: 26px;
+}
+
+h2 {
+	margin: 0 0 20px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.plant-form {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.wide {
+	grid-column: 1 / -1;
+}
+
+label {
+	display: grid;
+	gap: 7px;
+	color: #475569;
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.catalog-header {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 16px;
+}
+
+.catalog-header h2 {
+	margin-bottom: 6px;
+}
+
+.catalog-header p {
+	color: #657184;
+}
+
+.search {
+	width: min(360px, 100%);
+	padding: 10px 12px;
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+}
+
+.plant-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+	gap: 1.25rem;
+}
+
+.plant-card {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px;
+	background: #ffffff;
+	border: 1px solid #e2e7ee;
+	border-radius: 14px;
+	box-shadow: 0 8px 24px rgba(28, 43, 58, 0.06);
+}
+
+.plant-card h3,
+.plant-card p {
+	margin: 0;
+}
+
+.plant-card h3 {
+	color: #1e3a5f;
+	font-size: 1.25rem;
+}
+
+.plant-card em {
+	color: #64748b;
+}
+
+.plant-card .card-actions {
+	display: flex;
+	gap: 8px;
+	margin-top: auto;
+	padding-top: 10px;
+}
+
+.card-actions button,
+.plant-form button {
+	padding: 6px 10px;
+	border: 1px solid #cbd5e1;
+	border-radius: 4px;
+	background: #f8fafc;
+	color: inherit;
+	cursor: pointer;
+}
+
+@media (max-width: 640px) {
+	.catalog-header {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.plant-form {
+		grid-template-columns: 1fr;
+	}
+
+	.plant-list {
+		grid-template-columns: minmax(0, 350px);
+	}
+}
