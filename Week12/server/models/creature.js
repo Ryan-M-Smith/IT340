@@ -22,7 +22,8 @@ const schema = new mongoose.Schema({
 		type: String,
 		trim: true,
 		default: "No description availab;e."
-	},
+	}
+}, {
 	timestamps: true
 });
 
